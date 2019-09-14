@@ -1,0 +1,45 @@
+* For all simulations (when applicable) *
+Advection tolerance 10^-6
+Stokes tolerance    10^-4
+Stokes alpha        0.032
+Stokes eps          10^-3
+
+Advection and Stokes tolerance levels were chosen as the highest possible values
+for which the shapes didn't appear to change much if a lower was used.
+
+
+
+* LeVeque *
+            |   64      128     256
+------------------------------------
+Adv. dt     |   1/16    1/32    1/64
+
+
+
+* Surface tension *
+            |   64      128     256
+------------------------------------
+Adv. dt     |   1/64    1/128   1/256
+
+
+
+* Growth *
+            |   Fig. 4      Figs. 5-6
+-----------------------------------
+Act         |   2.0         2.0
+Da          |   5.0*10^-6   5.0*10^-6
+DegA        |   0.01        0.01
+Inh         |   1.0         1.0
+Di          |   1.0*10^-4   7.5*10^-5
+DegI        |   0.02        0.02
+GF prod.    |   40.0        40.0
+GF diff.    |   1.25*10^-4  1.25*10^-4
+GF deg.     |   0.02        0.02
+GF inh.     |   200.0       200.0
+Knots thr.  |   7.0         5.0
+RD dt       |   1/8         1/32
+RD iter.    |   16000       32000   
+Adv. dt     |   1/64        1/32
+
+Advection and RD time steps in each case were chosen as the highest values for 
+which the output didn't appear to change much if a lower was used.
