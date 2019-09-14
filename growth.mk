@@ -43,7 +43,7 @@ endif
 all: bin/$(BIN)
 
 build/$(BIN):
-	@mkdir -p build/$(BIN)
+	@mkdir -p build/$(BIN) bin
 
 build/$(BIN)/%.o : src/%.cpp
 	$(CXX) $(CFLAGS) -c -o $@ $<
